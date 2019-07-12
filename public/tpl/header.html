@@ -36,18 +36,23 @@
 <div class="page-header-menu">
   <div class="container">
     <!-- BEGIN MEGA MENU -->
-    <div class="hor-menu hor-menu-light">
+    <div class="hor-menu">
+
       <ul class="nav navbar-nav">
-        <li class="active">
-          <a href="/">Home</a>
+        <li ui-sref-active="active">
+          <a ui-sref="home">Home</a>
         </li>
-        <li ng-show="settings.useRichList">
-          <a href="/accounts">Accounts</a>
+        <li ng-show="settings.useRichList" ui-sref-active="active">
+          <a ui-sref="accounts">Accounts</a>
         </li>
+        <li ui-sref-active="active">
+          <a ui-sref="viewcontract">Verify Contract</a>
+        </li>
+
         <!-- <li>
           <a href="/token">Tokens</a>
         </li> -->
-        <li class="menu-dropdown mega-menu-dropdown ">
+        <!-- <li class="menu-dropdown mega-menu-dropdown ">
           <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="#" class="dropdown-toggle"> Stats
           <i class="fa fa-angle-down"></i>
           </a>
@@ -91,7 +96,7 @@
             </li>
           </ul>
         </li> -->
-        <li class="menu-dropdown classic-menu-dropdown ">
+        <!--<li class="menu-dropdown classic-menu-dropdown ">
           <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="#"> Community
           <i class="fa fa-angle-down"></i>
           </a>
@@ -127,7 +132,7 @@
               </a>
             </li>
           </ul>
-        </li>
+        </li> -->
       </ul>
     </div>
     <!-- END MEGA MENU -->

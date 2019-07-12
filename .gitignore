@@ -3,6 +3,8 @@ logs
 *.log
 npm-debug.log*
 
+.idea
+docker-compose2.yml
 # Runtime data
 pids
 *.pid
