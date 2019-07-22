@@ -112,6 +112,8 @@ var getAccounts = function (req, res) {
           return;
         }
 
+        accounts = accounts.filter((e, i) => accounts.findIndex(a => a['address'].toLowerCase() === e['address'].toLowerCase()) === i)
+
         data.data = accounts.map((account, i) => [i + 1 + start, account.address, account.type, account.balance, account.blockNumber]);
         res.write(JSON.stringify(data));
         res.end();

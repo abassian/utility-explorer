@@ -44,3 +44,5 @@ services:
       - db
   db:
     image: mongo
+    ports:
+      - 2017:27017
